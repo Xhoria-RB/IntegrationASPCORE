@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewData["Title"] = "New Products";
+}
+
+<div class="çontainer">
+
+
+    <h2>@ViewData["Title"]</h2>
+    <hr />
+    <div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <asp:Label ID="Label1" runat="server" Text="Product name:"></asp:Label>
+                <asp:TextBox ID="txtProductName" runat="server" class="form-control"></asp:TextBox>
+            </div>
+
+            <div class="col-md-4">
+                <asp:Label ID="Label2" runat="server" Text="Product active"></asp:Label>
+                <asp:CheckBox ID="cxbProductActive" runat="server" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <asp:Label ID="Label7" runat="server" Text="Unit price"></asp:Label>
+                <asp:TextBox ID="txtUnitPrice" runat="server" class="form-control"></asp:TextBox>
+            </div>
+            <div class="col-md4">
+                <asp:Label ID="Label8" runat="server" Text="Taxes"></asp:Label>
+                <asp:TextBox ID="txtTaxes" runat="server" class="form-control"></asp:TextBox>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <asp:Label ID="Label9" runat="server" Text="Qt. in stock:"></asp:Label>
+                <asp:TextBox ID="txtQtStock" runat="server" class="form-control"></asp:TextBox>
+            </div>
+            <div class="col-md-4">
+                <asp:Label ID="Label10" runat="server" Text="Handler"></asp:Label>
+
+                <asp:DropDownList ID="ddLHandler" runat="server" Height="20px" Width="150px" class="form-control">
+                </asp:DropDownList>
+                <br />
+                <br />
+                <asp:Button ID="btnCancel" runat="server" Height="58px" Text="Cancel" Width="107px" class="btn btn-danger" />
+                <asp:Button ID="btnSave" runat="server" Height="58px" Text="Save" Width="107px" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+</div>
